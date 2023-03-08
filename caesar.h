@@ -3,7 +3,7 @@
 // add prototypes here
 
 #ifndef CAESAR_H
-#define FCAESAR_H
+#define CAESAR_H
 
 using namespace std;
 #include <string>

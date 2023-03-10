@@ -3,6 +3,7 @@
 #include "funcs.h"
 #include "caesar.h"
 #include "vigenere.h"
+#include "decrypt.h"
 
 // add your tests here
 
@@ -23,4 +24,13 @@ TEST_CASE("encryptCaesar") {
 // TASK C
 TEST_CASE("Encrypt Vigenere") {
     CHECK(encryptVigenere("Hello, World!", "cake") == "Jevpq, Wyvnd!");
+}
+
+// TASK D
+TEST_CASE("Decrypt Caesar") {
+    CHECK(decryptCaesar("Rovvy, Gybvn!", 10) == "Hello, World!");
+}
+
+TEST_CASE("Decrypt Vigenere") {
+    CHECK(decryptVigenere("Jevpq, Wyvnd!", "cake") == "Hello, World!");
 }
